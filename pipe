@@ -5,12 +5,12 @@ node {
         url: 'https://github.com/Rudhanlm10/jm-09.git'
     }
     stage('clean-package') {
-        sh "${mvnHome}/bin/mvn clean package"
+        sh "${mvn_home} clean package"
     }
     stage('test') {
-        sh "${mvnHome}/bin/mvn test""
+        sh "${mvn_home} test"
     }
 	stage('clean-compile') {
-        sh "${mvnHome}/bin/mvn clean compile""
+        sh "${mvn_home} clean compile"
     }
 }
